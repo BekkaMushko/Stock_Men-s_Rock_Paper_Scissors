@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(227, 227, 227);
+}
+
+h1, h2 {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 4vh;
+}
+
+h2 {
+    font-size: 3.5vh;
+}
+
+h3 {
+    margin: 0;
+    font-size: 3vh;
+}
+
+img {
+    width: auto;
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px;
+    margin: 3px 10px;
+    box-shadow: 0 0 10px 3px rgba(220, 20, 60, 0.5);
+    border-radius: 5px;
+    background: crimson;
+    text-decoration: none;
+    color: black;
+}
+
+.opponents-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.opponents-container > :nth-child(odd) {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.opponents-container > :nth-child(even) {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.hands-container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 10%;
+}
+
+.hands-container ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.hands-container img {
+    height: 15vh;
+}
+
+.hand-disabled {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hand-enabled {
+    box-shadow: 0 0 10px 3px rgba(95, 158, 160, 0.5);
+}
+
+.hand-chosen {
+    box-shadow: 0 0 10px 3px rgba(0, 128, 0, 0.5);
+}

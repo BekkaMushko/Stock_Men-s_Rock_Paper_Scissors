@@ -1,0 +1,6 @@
+{% extends "layout.jinja2" %}
+    {% block body %}
+        <h2>Error 404: This page does not exist</h2>
+    <img src="{{url_for('static', filename='images/error_404.png')}}" style="height: 30vh;">
+        <h2><a class="button" href="{{url_for('game')}}">This is the page you need!</a></h2>
+    {% endblock %}
